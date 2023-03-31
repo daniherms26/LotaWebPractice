@@ -15,6 +15,10 @@
 }
 .jumbotron-title {
 	font-size: 50px;
+}
+
+.jumbotron-info {
+	font-size: 35px;
 
 }
 
@@ -106,7 +110,7 @@
 }
 
 .ads-container {
-	height: 400px;
+
 	background-color: #fdf3e9;
 	margin-bottom: 30px;
 	display: flex;
@@ -125,6 +129,7 @@
 }
 
 .ads-title {
+	margin-top: -20px;
 	margin-bottom: 20px;
 	font-size: 35px;
 	background-color: #eee5e6;
