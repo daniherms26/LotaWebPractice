@@ -1,0 +1,223 @@
+.jumbotron {
+	height: 600px;
+	background-color: pink;
+	margin-bottom: 50px;
+	background-image: url("../thumbnails/jumbo1.jpeg");
+	background-size: 100% 100%;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.jumbotron-inner-container {
+	width: 40%;
+	margin-left: 80px;
+}
+.jumbotron-title {
+	font-size: 50px;
+
+}
+
+.jumbotron-btn {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 20px;
+	font-family: Roboto, Arial;
+	font-weight: 500;
+	padding: 10px 15px;
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0.15);
+	border: 1px solid #97DEFF;
+	box-shadow: 1px 2px 1px rgba(0,0,0,0.5);
+	text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+	cursor: pointer;
+	transition: background-color 0.5s, border 0.5s,
+	box-shadow: 0.5s, color 0.5s;	
+}
+
+.jumbotron-btn:hover {
+	background-color: rgba(0,0,0,0.85);
+	color: #fff;
+}
+
+.voucher-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	padding-left: 80px;
+	padding-right: 80px;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 20px;
+	row-gap: 35px;
+	padding-left: 80px;
+	padding-right: 80px;
+	margin-bottom: 90px;
+}
+
+.grid-inner-container-row-1, .grid-inner-container-row-2,
+.grid-inner-container-row-3, .grid-inner-container-row-4,
+.grid-inner-container-row-5 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background-color: #fdf3e9;
+	border: none;
+}
+
+
+
+.title, .text, .grid-ads-btn {
+	margin-bottom: 20px;
+}
+
+.text {
+	line-height: 25px;
+	font-size: 14px;
+}
+
+.title {
+	font-family: Roboto, Arial;
+	text-shadow: 2px 3px 3px rgb(0,0,0,0.35);
+}
+
+.grid-ads-btn {
+	background-color: rgb(240,247,264);
+	color: rgb(45,47,64);
+	font-family: Roboto, Arial;
+	font-weight: 500;
+	font-size: 12px;
+	padding: 10px 18px;
+	border-radius: 25px;
+	cursor: pointer;
+	border: 1px solid #000; 
+	transition: background-color 0.15s;
+}
+
+.grid-ads-btn:hover {
+	background-color: rgb(220,227,234);
+}
+
+.grid-ads-btn:active {
+	box-shadow: inset 2px 3px 4px rgba(0,0,0,0.45);
+}
+
+.ads-container {
+	height: 400px;
+	background-color: #fdf3e9;
+	margin-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-top: 4px solid gray;
+}
+
+.ads-b-section {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	column-gap: 40px;
+	margin-bottom: 20px;
+}
+
+.ads-title {
+	margin-bottom: 20px;
+	font-size: 35px;
+	background-color: #eee5e6;
+	border: 4px solid gray;
+	padding: 8px 15px;
+	border-radius:40px 0 40px 0;
+	font-family: Roboto, Arial;
+	box-shadow: inset 1px 1px 3px rgba(0,0,0,0.75);
+	color: rgba(0,0,0,0.5);
+}
+
+.ads-filler {
+	background-color: #fff;
+	height: 250px;
+	width: 250px;
+	border: 1px solid #fff;
+	border-radius: 25px;
+	overflow: hidden;
+	box-shadow: 15px 15px 1px rgba(0,0,0,0.5);
+	position: relative;
+}
+
+.ads-filler-btn {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 20px;
+	font-family: Roboto, Arial;
+	font-weight: 500;
+	padding: 10px 15px;
+	border-radius: 10px;
+	background-color: #97DEFF;
+	border: 1px solid #97DEFF;
+	box-shadow: 1px 2px 1px rgba(0,0,0,0.5);
+	text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+	cursor: pointer;
+	transition: background-color 0.5s, border 0.5s;
+	box-shadow: 0.5s, color 0.5s;
+}
+
+.ads-filler-btn:hover {
+	background-color: #C9EEFF;
+	border: 1px solid #C9EEFF;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.15);
+	color: #fff;
+}
+
+
+.ads-voucher {
+	height: 200px;
+	background-color: gray;
+	background-image: url("../thumbnails/sample-vouch.jpg");
+	background-size: 100% 100%;
+	margin-top: 30px;
+	margin-bottom: 50px;	
+}
+
+.ads-filler img {
+	width: 100%; 
+	height: 100%;
+}
+
+.ads-filler:hover .overlay {
+	width: 100%;
+}
+
+.overlay {
+	height: 100%;
+	position: absolute;
+	width: 0;
+	background-color: rgba(0,0,0,0.15);
+	overflow: hidden;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	transition: 0.5s ease;
+}
+
+.overlay-btn {
+	  color: #fff;
+	  font-size: 20px;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  background-color: rgba(0,0,0,0.5);
+	  border-radius: 5px;
+	  transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%);
+	  cursor: pointer;
+}
+
+.overlay-btn:hover {
+	  color: #000;
+	  background-color: rgba(255,255,255,0.5);
+}
+
