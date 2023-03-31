@@ -1,0 +1,43 @@
+.footer-line {
+	border: 2px solid lightpink;
+	margin-bottom: 60px;
+}
+
+.footer-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 40px;
+}
+
+.footer-divider-logo{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-right: 80px;
+	margin-left: 80px;
+	align-items: start;
+	text-align: left;
+}
+
+.foot-logo {
+	width: 50%;
+	height: 50%;
+	margin-top: 20px;	
+}
+
+.foot-divider {
+	flex: 1;
+}
+
+.foot-icon {
+	height: 50px;
+	width: 50px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.reminder {
+	margin-bottom: 40px;
+	margin-left: 80px;
+}
