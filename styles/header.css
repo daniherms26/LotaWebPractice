@@ -3,6 +3,9 @@ body{
 	padding-top: 72px;
 }
 
+body:active .header-overlay {
+	width: 0;
+}
 
 .header-container {
 	background-color: #fdf3e9;
@@ -172,18 +175,62 @@ body{
 	font-weight: 500;
 }
 
-.header-overlay-nav {
-	flex: 1;
-	display: flex;
-	justify-content: left;
-	align-items: center;
-	padding-left: 10px;
+.sidebar,.sidebar-dropdown,.sidebar-dropdown-menu  {
+	padding: 20px;
 	cursor: pointer;
+
 }
 
-.header-overlay-nav:hover {
-	background-color: gray;
+.sidebar-dropdown img{
+	height: 20px; 
+	padding: 5px;
+}
+
+.sidebar-dropdown-aligner {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.sidebar-dropdown-menu {
+	display: none;
+}
+.sidebar-check {
+	visibility: hidden;
+	position: absolute;
+}
+
+.sidebar-check:checked ~ .sidebar-dropdown-menu {
+	display: flex;
+	flex-direction: column;
+}
+
+.sidebar-check-a {
+	visibility: hidden;
+	position: absolute;
+}
+
+.sidebar-check-a:checked ~ .sidebar-dropdown-menu {
+	display: flex;
+	flex-direction: column;
+}
+
+.sidebar-check-b {
+	visibility: hidden;
+	position: absolute;
+}
+
+.sidebar-check-b:checked ~ .sidebar-dropdown-menu {
+	display: flex;
+	flex-direction: column;
+}
+
+.sidebar:hover ,.sidebar-dropdown:hover ,.sidebar-dropdown-menu:hover {
 	background-color: rgb(0,0,0);
+}
+
+.sidebar-dropdown-menu:hover {
+	background-color: rgb(67,67,67);
 }
 
 .check {
@@ -192,7 +239,7 @@ body{
 }
 
 .check:checked ~ .header-overlay {
-	width: 30%;
+	width: 50%;
 }
 
 .floater {
