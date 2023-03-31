@@ -68,7 +68,7 @@
 }
 
 @media (min-width: 720.1px) and (max-width: 1099.9px){
-/* HEAD */	
+/* HEAD 	
 	.header-nav {
 		text-align: center;
 		font-size: 12px;
@@ -104,6 +104,31 @@
 	.header-overlay {
 		top: 65px;
 	}
+	*/
+	.header-nav{
+		visibility: hidden;
+	}
+	.header-b-section {
+		visibility: hidden;
+	}
+	
+	.hamburger-icon {
+		visibility: visible;
+		right: 0;
+		left: 15px;
+	}
+	
+	.header-container {
+		height: 60px;
+	}	
+	.logo {
+		height: 50px;
+		margin-left: -40px;
+	}
+	.floater {
+		display: inline;
+	}
+	
 /* BODY */	
 	.jumbotron {
 		height: 400px;
