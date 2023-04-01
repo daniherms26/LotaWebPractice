@@ -1,5 +1,5 @@
 
-@media (max-width: 750px) {
+@media (max-width: 850px) {
 /* HEAD */	
 	.header-nav{
 		visibility: hidden;
@@ -67,7 +67,7 @@
 	}
 }
 
-@media (min-width: 750.1px) and (max-width: 1099.9px){
+@media (min-width: 850.1px) and (max-width: 1099.9px){
 /* HEAD 	
 	.header-nav {
 		text-align: center;
