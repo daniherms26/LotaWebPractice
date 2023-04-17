@@ -1,3 +1,4 @@
+
 .footer-line {
 	border: 2px solid #fdf3e9;
 	margin-bottom: 60px;
@@ -15,7 +16,6 @@
 
 .footer-divider-logo{
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
 	margin-right: 80px;
 	margin-left: 80px;
@@ -32,10 +32,6 @@
 .foot-divider {
 	flex: 1;
 	line-height: 50px;
-}
-
-.foot-icon-container {
-	display: flex;
 }
 
 .foot-divider a {
@@ -56,10 +52,11 @@
 	margin-left: 10px;
 	margin-right: 10px;
 }
-.hr-reminder {
-	margin:20px 80px; 
+
+.hr-reminder {	
 	border: 1px solid #fdf3e9;
 }
+
 .reminder {
 	margin-bottom: 40px;
 	margin-left: 80px;

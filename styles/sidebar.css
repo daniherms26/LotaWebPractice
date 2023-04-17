@@ -1,0 +1,116 @@
+.hamburger-icon {
+	height: 30px; 
+	width: 30px; 
+	position: fixed;
+    top: 8px;
+    right: 0;
+	padding: 5px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 2px 3px 2px rgba(0,0,0,0.15);
+	border: 1px solid rgb(65,75,80);
+    cursor: pointer;
+    z-index: 200;
+}
+
+.hamburger-icon:hover {
+	background-color: #e0dcdc;
+}
+
+.hamburger-icon:active {
+	background-color: #c9c7c7;
+}
+
+.sidebar-overlay {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	background-color: #fdf3e9;
+    border-right: 1px solid rgba(65,75,80,0.55);
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.15);
+	overflow: hidden;
+	top: 60px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transition: 0.25s ease;
+	color: #000000;
+    z-index: 50;
+}
+
+.sidebar-overlay .sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    vertical-align: center;
+}
+
+.sidebar-icon {
+    height: 25px;
+    margin-right: 20px;
+    margin-top: -5px;
+}
+
+.sidebar-menu a {
+    flex: 1;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(100, 59, 59); ;
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.sidebar-menu a:hover {
+    color: rgb(36, 21, 21); ;
+}
+
+.sign-in-btn-sidebar {
+    background-color: #fff;
+	color: rgb(20,26,34);
+	font-family: Roboto, Aria;
+	font-weight: 500;
+	font-size: 16px;
+	padding: 10px 18px;
+	border-radius: 5px;
+	box-shadow: 2px 3px 2px rgba(0,0,0,0.15);
+	cursor: pointer;
+	margin-left: 30px;
+    margin-top: 20px;
+	border: 1px solid rgb(65,75,80); 
+	transition: background-color 0.15s;
+    white-space: nowrap;
+    width: 50%;
+}
+
+.sign-in-btn-sidebar:hover {
+	background-color: rgb(65,75,80);
+	color: #fff;
+}
+
+.sign-up-btn-sidebar {
+    background-color: rgb(39, 24, 24);
+	color: #fff;
+	font-family: Roboto, Aria;
+	font-weight: 500;
+	font-size: 16px;
+	padding: 10px 18px;
+	border-radius: 5px;
+	box-shadow: 2px 3px 2px rgba(0,0,0,0.15);
+	cursor: pointer;
+	margin-left: 30px;
+    margin-top: 20px;
+	border: 1px solid rgb(65,75,80);
+	transition: background-color 0.15s;
+    white-space: nowrap;
+    width: 50%;
+}
+
+.sign-up-btn-sidebar:hover {
+	background-color: rgb(230,230,230);
+	color: rgb(20,26,34);
+}
+

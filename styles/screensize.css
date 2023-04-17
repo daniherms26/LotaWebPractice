@@ -1,0 +1,163 @@
+
+@media (max-width: 750px) {
+    /* HEAD */	
+        .header-nav{
+            visibility: hidden;
+        }
+        .header-b-section {
+            visibility: hidden;
+        }
+        
+        .hamburger-icon {
+            visibility: visible;
+            right: 20px;
+        }
+        
+        .header-container {
+            height: 60px;
+        }	
+        .logo {
+            height: 50px;
+            margin-left: -40px;
+        }
+        .floater {
+            display: inline;
+        }
+    /* BODY */	
+        .jumbotron {
+            height: 200px;
+        }
+        .jumbotron-title {
+        font-size: 18px;
+        }
+    
+        .jumbotron-info {
+            font-size: 14px;
+    
+        }
+        .grid-container {
+            grid-template-columns: 1fr;
+        }
+        .ads-b-section {
+            grid-template-columns: 1fr;
+            row-gap: 20px;
+        }   
+        .ads-voucher {
+            display: none;
+        }
+    /* FOOT */
+        .footer-divider-logo{
+            flex-direction: column;
+            margin-left: 0;
+        }
+        .foot-icon-container {
+            flex-direction: column;
+        }
+        .foot-logo {
+            display: none;
+        }
+        .hr-reminder {
+            margin: 0;
+        }
+        .reminder {
+            margin-left: 0;
+            font-size: 14px;
+        }
+    }  
+
+    @media (min-width: 750.1px) and (max-width: 1099.9px){
+/* HEAD */ 	       
+        .header-nav{
+            visibility: hidden;
+        }
+        .header-b-section {
+            visibility: hidden;
+        }
+        
+        .hamburger-icon {
+            visibility: visible;
+            right: 20px;
+           
+        }
+        .header-container {
+            height: 60px;
+        }	
+        .logo {
+            height: 50px;
+            margin-left: -40px;
+        }     
+    /* BODY */	
+        .jumbotron {
+            height: 400px;           
+        }
+        .jumbotron-title {
+        font-size: 30px;
+        }
+        .jumbotron-info {
+            font-size: 23px;
+        }
+        .grid-container {
+            grid-template-columns: 1fr 1fr ;
+        }
+        .ads-b-section {
+            flex-direction: column;
+            row-gap: 20px;
+        }
+    /* FOOT */
+        .footer-divider-logo{
+            flex-direction: column;
+            margin-left: 0;
+        }
+        .foot-icon-container {
+            flex-direction: column;
+        }
+        .foot-logo {
+            display: none;
+        }
+        .hr-reminder {
+            margin: 0;
+        }
+        .reminder {
+            margin-left: 0;
+            font-size: 14px;
+        }
+    }
+
+      @media (min-width: 1100px) {
+        .jumbotron {
+            height: 600px;
+        }
+        .jumbotron-title {
+            font-size: 50px;
+        }
+        .jumbotron-info {
+            font-size: 35px;
+        }
+        .hamburger-icon {
+            visibility: hidden;
+        }
+        .header-overlay {
+            width: 0;
+            transition: width 0.05s ease;
+        }
+        .sidebar-overlay{
+            visibility: hidden;
+        }
+        .grid-container {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .ads-b-section {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .footer-divider-logo{
+            flex-direction: row;
+        }
+        .foot-icon-container {
+            display: flex;
+        }
+
+        .hr-reminder {
+            margin:20px 80px; 
+        }
+    }	
