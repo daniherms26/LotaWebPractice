@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/head.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/screensize.css">
+    <link rel="stylesheet" href="styles/body.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <script src="styles/myscript.js"></script>
+
+    <style>
+        .menu-title-holder {
+            background-color: #fff3e8;
+            font-weight: bold;
+            font-size: 24px;
+            display: grid;
+            column-gap: 20px;
+            grid-template-columns: 1fr 4fr;
+            row-gap: 35px;
+            padding-left: 120px;
+            padding-right: 120px;
+            align-items: center;
+            vertical-align: top;
+            height: 100px;
+            margin-top: -55px;
+        }
+
+        .search-holder {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .menu-search {
+            width: 250px;
+            height: 40px;
+            border-radius: 5px 0 0 5px;
+            border: solid 1px rgb(186, 166, 145);
+            box-shadow: 1px 2px 3px #ffcdbc;
+            border-right: none;
+            font-size: 15px;
+            padding-left: 15px;
+            color: rgb(26, 16, 16);
+        }
+
+        .menu-search::placeholder {
+           font-size: 15px;
+        }
+
+        .menu-search-btn {
+            height: 44px;
+            padding: 10px 20px;
+            border-radius: 0 5px 5px 0;       
+            border: solid 1px rgb(186, 166, 145);
+            background-color: #fff;
+            border-left: none;
+            cursor: pointer;
+            box-shadow: 1px 2px 3px #ffcdbc;
+        }
+
+        .menu-search-btn:hover {
+            background-color:  #e5e3e3;
+        }
+
+        .menu-search-btn img {
+            height: 20px;
+        }
+
+        .menu-holder {
+            display: flex;
+            flex-direction: row;
+            padding-left: 120px;
+            padding-right: 120px;
+        }
+
+        .menu-body-holder {
+            flex: 4;
+            margin-top: 50px;
+            padding-left: 20px;
+        }
+
+        .menu-shake-title {
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .shake-menu, .coffee-menu, .refresher-menu, 
+        .sandwich-menu, .waffle-menu {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 30px;
+            row-gap: 50px;
+            
+        }
+        
+        .menu-box, .menu-title-box {
+            width: 200px;
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            font-size: 20px;
+            cursor: pointer;
+            align-items: center;
+        }
+        
+        .menu-choices {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 50px;
+            padding-left: 20px;
+            margin-top: 40px;
+            margin-bottom: 100px;
+        }
+
+        .menu-title-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 20px;
+
+
+        }
+
+        .menu-title-box h4{
+            margin-left: 20px;
+            white-space: nowrap;
+
+        }
+
+        .menu-img-holder {
+            height: 150px;
+            width: 150px;
+            border-radius: 100px;
+            box-shadow: 1px 1px 5px #6f6565;
+            overflow: hidden;
+        }
+
+        .menu-img-holder img {
+            height: 150px;
+            
+        }
+
+        .menu-side-holder {
+            margin-top: 50px;
+            flex: 1;
+           
+        }
+
+        .menu-side-holder p{
+            font-size: 18px;
+            cursor: pointer;
+            color: #675959;
+        }
+
+        .menu-side-holder p:hover{
+            color: #030303;
+        }
+
+        .menu-side-holder h3{
+            font-size: 25px;
+            
+        }
+    </style>
+</head>
+<body>
+
+     <!--- HEADER -->   
+     <div class="header-container">
+        <div class="header-continer-inner">
+            <div class="header-a-section">
+                
+                    <a href="index.html" title="Home">
+                        <img class="logo" src="thumbnails/lota logo.jpg">
+                    </a>
+               
+
+                <div class="dropdown header-nav">
+                    <button class="dropbtn"><a href="menu.html">MENU</a></button>
+                    <!--<div class="dropdown-content">
+                        <a onclick="redirect('milkshakes')">MILKSHAKES</a>
+                        <a onclick="redirect('coffee-blends')">COFFEE BLENDS</a>
+                        <a href="#">REFRESHER</a>
+                        <a href="#">WAFFLES</a>
+                        <a href="#">SANDWICHES</a>
+                    </div>-->
+                </div>
+                
+                <div class="dropdown header-nav">
+                    <button class="dropbtn"><a href="#">PROMO</a></button>
+                    <!---<div class="dropdown-content">
+                        <a href="#">BUNDLES</a>
+                        <a href="#">DISCOUNTS</a>
+                        <a href="#">VOUCHERS</a>
+                    </div>-->
+                </div>
+
+                <div class="dropdown header-nav">
+                    <button class="dropbtn"><a href="#">DELIVERY</a></button>
+                </div>
+            </div>
+
+            <div class="header-b-section">
+                <div class="dropdown header-nav">
+                    <button class="dropbtn"><a href="#">CONTACT US</a></button>
+                </div>
+
+                <button class="sign-in-btn">SIGN IN</button>
+			    <button class="sign-up-btn">SIGN UP</button>		
+            </div> 
+        </div>
+    </div>
+   
+<!---SIDEBAR-->
+    <div>
+        <div class="hamburger-icon" onclick="sidebar()">
+            <img class="hamburger-image" src="icon/hamburger-menu.svg">
+        </div>
+
+        <div class="sidebar-overlay">             
+            <div class="sidebar-menu">
+                
+                    <a href="www.youtube.com"><img class="sidebar-icon" src="icon/menu.png" /> MENU </a>
+                    <a href="#"><img class="sidebar-icon" src="icon/promo.png" /> PROMO</a>
+                    <a href="#"> <img class="sidebar-icon" src="icon/deliver.webp" />DELIVERY</a>
+                    <hr style="border:solid 2px #c8c0b7;; margin-top: 30px; width: 80%;">  
+                    <a href="#"><img class="sidebar-icon" src="icon/contact.png" />CONTACT US</a>
+                    <button class="sign-in-btn-sidebar">SIGN IN</button>
+                    <button class="sign-up-btn-sidebar">SIGN UP</button>  
+                
+                
+            </div>            
+        </div>
+    </div> 
+
+    <div class="all-container">
+    <!----BODY-->
+        <div class="jumbotron">
+            <div class="jumbotron-inner-container">
+                <h1 class="jumbotron-title">LOT'a Drink! LOT'a Fun!</h1>
+                <h1 class="jumbotron-info">Try our refreshing drinks made with real fruits!</h1>
+                <button class="jumbotron-btn"> ORDER NOW </button>
+            </div>
+        </div>
+
+        <div class="menu-title-holder">
+            <div>
+                Menu
+            </div>
+            <div class="search-holder">
+                <input id="menu" onkeyup="myFunction()" class="menu-search" placeholder="Search food and drinks here" />
+                <button class="menu-search-btn"><img src="icon/search.svg"></button>
+            </div>
+        </div>
+    <!---food and drinks-->
+        <div class="menu-holder" >
+            <div class="menu-side-holder">
+                <h3>DRINKS</h3>
+                <p onclick="menuRender('milkshakes')">MILKSHAKES</p>
+                <p onclick="menuRender('coffee-blends')">COFFEE BLENDS</p>
+                <p onclick="menuRender('refreshers')">REFRESHERS</p>
+                <h3 style="margin-top: 40px;">FOODS</h3>
+                <p onclick="menuRender('waffles')">WAFFLES</p>
+                <p onclick="menuRender('sandwiches')">SANDWICHES</p>
+                
+
+
+            </div>
+            <div class="menu-body-holder">
+                <div class="menuChoices" style="display: Initial;">                  
+                    <h2>Drinks</h2>
+                    <hr class="footer-line">
+                    <div class="menu-choices">
+                        <div class="menu-title-box">
+                            <div class="menu-img-holder" onclick="menuRender('milkshakes')">
+                                <img class="menu-img" src="product/milkshake/stawberry.JPG" />
+                            </div>
+                            <h4 onclick ="menuRender('milkshakes')">MILKSHAKES</h4>
+                        </div>
+
+                        <div class="menu-title-box">
+                            <div class="menu-img-holder" onclick ="menuRender('coffee-blends')">
+                                <img class="menu-img" src="product/milkshake/stawberry.JPG" />
+                            </div>
+                            <h4 onclick ="menuRender('coffee-blends')">COFFEE BLENDS</h4>
+                        </div>
+
+                        <div class="menu-title-box">
+                            <div class="menu-img-holder" onclick ="menuRender('refreshers')">
+                                <img class="menu-img" src="product/milkshake/stawberry.JPG" />
+                            </div>
+                            <h4 onclick ="menuRender('refreshers')">REFRESHER</h4>
+                        </div>
+
+                    </div>  
+                    
+                    <h2>Foods</h2>
+                    <hr class="footer-line">
+                    <div class="menu-choices">
+                        <div class="menu-title-box">
+                            <div class="menu-img-holder" onclick ="menuRender('waffles')">
+                                <img class="menu-img" src="product/milkshake/stawberry.JPG" />
+                            </div>
+                            <h4 onclick ="menuRender('waffles')">WAFFLES</h4>
+                        </div>
+
+                        <div class="menu-title-box">
+                            <div class="menu-img-holder" onclick ="menuRender('sandwiches')">
+                                <img class="menu-img" src="product/milkshake/stawberry.JPG" />
+                            </div>
+                            <h4 onclick ="menuRender('sandwiches')">SANDWCHES</h4>
+                        </div>
+
+                    </div> 
+                </div>
+
+<!----Drinks Menu-->
+                <div class="drinks" style="display:none;"> 
+                    <p class="menu-shake-title"><a href="#menu" style="text-decoration: none; color:#030303;" onclick="menuRender('menu')">Menu </a>/ Drinks</p>
+                    <div style="margin-bottom: 30px;" >           
+                        <div class="milkshakes" style="display:none;">
+                            <h2>Milkshakes</h2>
+                            <hr style="margin-bottom: 50px;" class="footer-line">
+                            <div class="shake-menu">
+
+                                <div class="menu-box">
+                                    <div class="menu-img-holder">
+                                        <img class="menu-img" src="product/milkshake/stawberry.JPG" />
+                                    </div>
+                                    <p>Strawberry</p>
+                                </div>
+
+                                <div class="menu-box">
+                                    <div class="menu-img-holder">
+                                        <img class="menu-img" src="product/milkshake/blueberry.JPG" />
+                                    </div>
+                                    <p>Blueberry</p>
+                                </div>
+
+                                <div class="menu-box">
+                                    <div class="menu-img-holder">
+                                        <img class="menu-img" src="product/milkshake/mango.JPG" />
+                                    </div>
+                                    <p>Mango</p>
+                                </div>
+
+                                <div class="menu-box">
+                                    <div class="menu-img-holder">
+                                        <img class="menu-img" src="product/milkshake/coockies.JPG" />
+                                    </div>
+                                    <p>Cookies and Cream</p>
+                                </div>
+
+                                <div class="menu-box">
+                                    <div class="menu-img-holder">
+                                        <img class="menu-img" src="product/milkshake/coockies.JPG" />
+                                    </div>
+                                    <p>Choco Kisses</p>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <div class="coffee-blends" style="display:none;margin-bottom: 30px;" >
+                        <h2>Coffe Blends</h2>
+                        <hr style="margin-bottom: 50px;" class="footer-line">
+                        <div class="coffee-menu">
+                            <div class="menu-box">
+                                <div class="menu-img-holder">
+                                    <img class="menu-img" src="product/milkshake/stawberry.JPG" />
+                                </div>
+                                <p>Ice Coffee</p>
+                            </div>
+
+                            <div class="menu-box">
+                                <div class="menu-img-holder">
+                                    <img class="menu-img" src="product/milkshake/stawberry.JPG" />
+                                </div>
+                                <p>Ice Chocolatte</p>
+                            </div>
+
+                            <div class="menu-box">
+                                <div class="menu-img-holder">
+                                    <img class="menu-img" src="product/milkshake/blueberry.JPG" />
+                                </div>
+                                <p>Ice Cookies and Cream Latte</p>
+                            </div>
+
+                            <div class="menu-box">
+                                <div class="menu-img-holder">
+                                    <img class="menu-img" src="product/milkshake/mango.JPG" />
+                                </div>
+                                <p>Ice Caramelatte</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="refreshers" style="display:none;margin-bottom: 30px;">
+                        <h2>Refresher</h2>
+                        <hr style="margin-bottom: 50px;" class="footer-line">
+                        <div class="coffee-menu">
+                            <div class="menu-box">
+                                <div class="menu-img-holder">
+                                    <img class="menu-img" src="product/milkshake/stawberry.JPG" />
+                                </div>
+                                <p>Ice Lemonade</p>
+                            </div>
+
+                            <div class="menu-box">
+                                <div class="menu-img-holder">
+                                    <img class="menu-img" src="product/milkshake/stawberry.JPG" />
+                                </div>
+                                <p>Ice Strawberrylatte</p>
+                            </div>
+
+                            <div class="menu-box">
+                                <div class="menu-img-holder">
+                                    <img class="menu-img" src="product/milkshake/blueberry.JPG" />
+                                </div>
+                                <p>Ice Mix Chocolate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+
+<!----Food Menu-->
+                <div class="foods" style="display:none;">
+                    <p class="menu-shake-title"><a href="#menu" style="text-decoration: none; color:#030303;" onclick="menuRender('menu')">Menu </a>/ Foods</p>
+                    <div class="sandwiches" style="margin-bottom: 30px;display:none;">
+                        <h2>Sandwiches</h2>
+                        <hr style="margin-bottom: 50px;" class="footer-line">
+                        <div class="sandwich-menu">
+                            <div class="menu-box">
+                                <div class="menu-img-holder">
+                                    <img class="menu-img" src="product/milkshake/stawberry.JPG" />
+                                </div>
+                                <p>Egg Drop</p>
+                            </div>
+
+                            <div class="menu-box">
+                                <div class="menu-img-holder">
+                                    <img class="menu-img" src="product/milkshake/stawberry.JPG" />
+                                </div>
+                                <p>Ham and Cheese</p>
+                            </div>
+
+                            <div class="menu-box">
+                                <div class="menu-img-holder">
+                                    <img class="menu-img" src="product/milkshake/blueberry.JPG" />
+                                </div>
+                                <p>Bacon</p>
+                            </div>
+
+                            <div class="menu-box">
+                                <div class="menu-img-holder">
+                                    <img class="menu-img" src="product/milkshake/blueberry.JPG" />
+                                </div>
+                                <p>Spicy Tuna</p>
+                            </div>
+
+                            <div class="menu-box">
+                                <div class="menu-img-holder">
+                                    <img class="menu-img" src="product/milkshake/blueberry.JPG" />
+                                </div>
+                                <p>Chicken Adobo</p>
+                            </div>
+
+                            <div class="menu-box">
+                                <div class="menu-img-holder">
+                                    <img class="menu-img" src="product/milkshake/blueberry.JPG" />
+                                </div>
+                                <p>Garlic Beef</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="waffles" style="margin-bottom: 30px;display:none;">
+                        <h2>Waffles</h2>
+                        <hr style="margin-bottom: 50px;" class="footer-line">
+                        <div class="waffle-menu">
+                            <div class="menu-box">
+                                <div class="menu-img-holder">
+                                    <img class="menu-img" src="product/milkshake/stawberry.JPG" />
+                                </div>
+                                <p>Chocolate Kisses Top</p>
+                            </div>
+
+                            <div class="menu-box">
+                                <div class="menu-img-holder">
+                                    <img class="menu-img" src="product/milkshake/stawberry.JPG" />
+                                </div>
+                                <p>Choco Cookies and Cream Top</p>
+                            </div>
+
+                            <div class="menu-box">
+                                <div class="menu-img-holder">
+                                    <img class="menu-img" src="product/milkshake/blueberry.JPG" />
+                                </div>
+                                <p>Cinnamon Candy Top</p>
+                            </div>
+
+                            <div class="menu-box">
+                                <div class="menu-img-holder">
+                                    <img class="menu-img" src="product/milkshake/blueberry.JPG" />
+                                </div>
+                                <p>Caramel Syrup Top</p>
+                            </div>                     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+         <hr class="footer-line"> 
+        
+        <div class="footer-container">
+            <div class="footer-divider-logo">
+                <div style="flex: 1;">
+                    <img class="foot-logo" src="thumbnails/lota logo.jpg">
+                </div>
+<!-------FOOTER -->                
+                   
+                <div class="foot-divider">
+                    <h3>How To Order</h3>
+                    <a href="#">View Menu</a>
+                    <br>
+                    <a href="#">Delivery</a>
+                </div>
+                
+                <div class="foot-divider">
+                    <h3>About Our Websites</h3>
+                    <a href="#">Terms and Conditions</a>
+                    <br>
+                    <a href="#">Privacy Policy</a>
+                    <br>
+                    <a href="#">Developer</a>
+                    <br>
+                    <a href="#">Cookie Preferences</a>
+                </div>
+                
+                <div class="foot-divider">
+                    <h3>Follow us:</h3>
+                    <div class="foot-icon-container">
+                        <a href="#">
+                            <img class="foot-icon" src="icon/facebook.png" href="#" title="facebook.com">
+                        </a>	
+                        <a href="#">
+                            <img class="foot-icon" src="icon/instagram.png" title="instagram.com">
+                        </a>
+                        <a href="#">
+                            <img class="foot-icon" src="icon/twitter.png" title="twitter.com">
+                        </a>
+                        <a href="#">
+                            <img class="foot-icon" src="icon/viber.png" title="viber.com">
+                        </a>
+                    </div>
+                </div>
+            </div>	
+        </div>
+        <hr class="hr-reminder">
+        <div class="reminder">&copy; 2023 Lota Herms Foods Corporation. All rights reserved</div>
+    
+    </div>
+
+    
+
+	
+
+
+</body>
+</html>
