@@ -22,3 +22,76 @@ window.onclick = function(event) {
     } 
 }
 
+function menuRender(items) {
+    document.querySelector('.menuChoices').style = "display: none;";
+    document.querySelector('.drinks').style = 'display: Initial;' ;  
+    document.querySelector('.foods').style = 'display: none;' ;
+
+
+    if (items === 'milkshakes') {
+        document.querySelector('.drinks').style = "display: Initial;"; 
+        document.querySelector('.foods').style = "display: none;";  
+        
+        document.querySelector('.milkshakes').style = "display: Initial;";
+        document.querySelector('.coffee-blends').style = "display: none;";
+        document.querySelector('.refreshers').style = "display: none;";
+        document.querySelector('.waffles').style = "display: none;";
+        document.querySelector('.sandwiches').style = "display: none;";
+    } else if (items === 'coffee-blends') {
+        document.querySelector('.drinks').style = "display: Initial;"; 
+        document.querySelector('.foods').style = "display: none;";  
+        
+        document.querySelector('.milkshakes').style = "display: none;";
+        document.querySelector('.coffee-blends').style = "display: Initial;";
+        document.querySelector('.refreshers').style = "display: none;";
+        document.querySelector('.waffles').style = "display: none;";
+        document.querySelector('.sandwiches').style = "display: none;";
+    } else if (items === 'refreshers') {
+        document.querySelector('.drinks').style = "display: Initial;"; 
+        document.querySelector('.foods').style = "display: none;";  
+        
+        document.querySelector('.milkshakes').style = "display: none;";
+        document.querySelector('.coffee-blends').style = "display: none;";
+        document.querySelector('.refreshers').style = "display: Initial;";
+        document.querySelector('.waffles').style = "display: none;";
+        document.querySelector('.sandwiches').style = "display: none;";
+    } else if (items === 'waffles') {
+        document.querySelector('.drinks').style = "display: none;"; 
+        document.querySelector('.foods').style = "display: Initial;"; 
+        
+        document.querySelector('.milkshakes').style = "display: none;";
+        document.querySelector('.coffee-blends').style = "display: none;";
+        document.querySelector('.refreshers').style = "display: none;";
+        document.querySelector('.waffles').style = "display: Initial;";
+        document.querySelector('.sandwiches').style = "display: none;";
+    } else if (items === 'sandwiches') {
+        document.querySelector('.drinks').style = "display: none;"; 
+        document.querySelector('.foods').style = "display: Initial;";  
+        
+        document.querySelector('.milkshakes').style = "display: none;";
+        document.querySelector('.coffee-blends').style = "display: none;";
+        document.querySelector('.refreshers').style = "display: none;";
+        document.querySelector('.waffles').style = "display: none;";
+        document.querySelector('.sandwiches').style = "display: Initial;";
+    } else if (items === 'menu') {
+        document.querySelector('.menuChoices').style = "display: Initial;"; 
+
+        document.querySelector('.drinks').style = "display: none;"; 
+        document.querySelector('.foods').style = "display: none;";  
+        
+        document.querySelector('.milkshakes').style = "display: none;";
+        document.querySelector('.coffee-blends').style = "display: none;";
+        document.querySelector('.refreshers').style = "display: none;";
+        document.querySelector('.waffles').style = "display: none;";
+        document.querySelector('.sandwiches').style = "display: none;";
+    }
+
+}
+
+function redirect(items)
+    {
+    var url = "menu.html";
+    location.href = url;
+    
+    menuRender(items);
+    }
